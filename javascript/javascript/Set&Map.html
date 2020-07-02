@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SET | Yong Book</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/watermelon.png">
+    <meta name="description" content="前端学习资料">
+    <link rel="preload" href="/assets/css/0.styles.16867b8b.css" as="style"><link rel="preload" href="/assets/js/app.3d8304a4.js" as="script"><link rel="preload" href="/assets/js/2.5e921e88.js" as="script"><link rel="preload" href="/assets/js/15.adaf55db.js" as="script"><link rel="prefetch" href="/assets/js/10.9b7de2dc.js"><link rel="prefetch" href="/assets/js/11.de73375e.js"><link rel="prefetch" href="/assets/js/12.319ee31c.js"><link rel="prefetch" href="/assets/js/13.52ee1b30.js"><link rel="prefetch" href="/assets/js/14.95b4d87a.js"><link rel="prefetch" href="/assets/js/16.2d8f1028.js"><link rel="prefetch" href="/assets/js/17.2a105d21.js"><link rel="prefetch" href="/assets/js/18.bf4886d6.js"><link rel="prefetch" href="/assets/js/3.5f2a698c.js"><link rel="prefetch" href="/assets/js/4.dd5127af.js"><link rel="prefetch" href="/assets/js/5.b064a07e.js"><link rel="prefetch" href="/assets/js/6.f16f746b.js"><link rel="prefetch" href="/assets/js/7.27ba3d64.js"><link rel="prefetch" href="/assets/js/8.aae86165.js"><link rel="prefetch" href="/assets/js/9.a97e21ff.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.16867b8b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Yong Book</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  Javascript
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  Javascript
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/" aria-current="page" class="sidebar-link">JavaScript</a></li><li><a href="/javascript/loop.html" class="sidebar-link">循环</a></li><li><a href="/javascript/ES6.html" class="sidebar-link">ES6</a></li><li><a href="/javascript/skill.html" class="sidebar-link">技巧</a></li><li><a href="/javascript/Set&amp;Map.html" aria-current="page" class="active sidebar-link">Set&amp;Map</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/Set&amp;Map.html#set" class="sidebar-link">SET</a></li><li class="sidebar-sub-header"><a href="/javascript/Set&amp;Map.html#map" class="sidebar-link">Map</a></li><li class="sidebar-sub-header"><a href="/javascript/Set&amp;Map.html#symbol" class="sidebar-link">Symbol</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="set"><a href="#set" class="header-anchor">#</a> SET</h2> <p>它类似于数组，但是成员的值都是唯一的，没有重复的值。</p> <h3 id="去重"><a href="#去重" class="header-anchor">#</a> 去重</h3> <p>去除数组的重复成员</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">]</span>         <span class="token comment">//方法一</span>
+Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">//方法二</span>
+</code></pre></div><p>去除字符串的重复成员</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token string">'ababbc'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="same-value-zero-equality"><a href="#same-value-zero-equality" class="header-anchor">#</a> Same-value-zero equality</h3> <p>'5' 5   不相等  要严格相等
+NaN NaN 相等
+{} {}   不相等  引用地址相等</p> <h3 id="set-结构的属性。"><a href="#set-结构的属性。" class="header-anchor">#</a> Set 结构的属性。</h3> <blockquote><p>操作方法（用于操作数据）</p></blockquote> <ul><li>Set.prototype.constructor：构造函数，默认就是Set函数。</li> <li>Set.prototype.size：返回Set实例的成员总数。</li> <li>Set.prototype.add(value)：添加某个值，返回 Set 结构本身。</li> <li>Set.prototype.delete(value)：删除某个值，返回一个布尔值，表示删除是否成功。</li> <li>Set.prototype.has(value)：返回一个布尔值，表示该值是否为Set的成员。</li> <li>Set.prototype.clear()：清除所有成员，没有返回值。</li></ul> <blockquote><p>遍历方法</p></blockquote> <p>let set = new Set(['red', 'green', 'blue']);</p> <ul><li>Set.prototype.keys()：返回键名的遍历器          ['red', 'green', 'blue']</li> <li>Set.prototype.values()：返回键值的遍历器        ['red', 'green', 'blue']</li> <li>Set.prototype.entries()：返回键值对的遍历器        [&quot;red&quot;, &quot;red&quot;]
+[&quot;green&quot;, &quot;green&quot;]
+[&quot;blue&quot;, &quot;blue&quot;]</li> <li>Set.prototype.forEach()：使用回调函数遍历每个成员  ['red', 'green', 'blue']</li></ul> <h2 id="map"><a href="#map" class="header-anchor">#</a> Map</h2> <p>Object 结构提供了“字符串—值”的对应，Map 结构提供了“值—值”的对应</p> <ul><li>get    如果找不到key，返回undefined</li> <li>set    可以采用链式写法</li> <li>size</li> <li>has</li> <li>delete  返回true。如果删除失败，返回false。</li> <li>clear</li></ul> <h3 id="遍历方法"><a href="#遍历方法" class="header-anchor">#</a> 遍历方法</h3> <ul><li><code>Map.prototype.keys()</code>：返回键名的遍历器。</li> <li>Map.prototype.values()：返回键值的遍历器。</li> <li>Map.prototype.entries()：返回所有成员的遍历器。</li> <li>Map.prototype.forEach()：遍历 Map 的所有成员。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> map<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>item<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> item<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// &quot;F&quot; &quot;no&quot;</span>
+<span class="token comment">// &quot;T&quot; &quot;yes&quot;</span>
+
+<span class="token comment">// 或者</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> value<span class="token punctuation">]</span> <span class="token keyword">of</span> map<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// &quot;F&quot; &quot;no&quot;</span>
+<span class="token comment">// &quot;T&quot; &quot;yes&quot;</span>
+
+<span class="token comment">// 等同于使用map.entries()</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> value<span class="token punctuation">]</span> <span class="token keyword">of</span> map<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// &quot;F&quot; &quot;no&quot;</span>
+<span class="token comment">// &quot;T&quot; &quot;yes&quot;</span>
+</code></pre></div><p>Map 结构转为数组结构，比较快速的方法是使用扩展运算符（...）。</p> <p>Map 转为对象</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//键都是字符串</span>
+<span class="token keyword">function</span> <span class="token function">strMapToObj</span><span class="token punctuation">(</span><span class="token parameter">strMap</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> obj <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">[</span>k<span class="token punctuation">,</span>v<span class="token punctuation">]</span> <span class="token keyword">of</span> strMap<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    obj<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> v<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> obj<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="symbol"><a href="#symbol" class="header-anchor">#</a> Symbol</h2> <blockquote><p>表示独一无二的值<br>
+七种是：undefined、null、布尔值（Boolean）、字符串（String）、数值（Number）、对象（Object）、Symbol</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 有参数的情况</span>
+<span class="token keyword">let</span> s1 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//foo 描述</span>
+<span class="token keyword">let</span> s2 <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+s1 <span class="token operator">===</span> s2 <span class="token comment">// false</span>
+<span class="token comment">//值不能与其他类型的值进行运算，会报错</span>
+<span class="token function">String</span><span class="token punctuation">(</span>sym<span class="token punctuation">)</span> <span class="token comment">// 'Symbol(foo)'</span>
+s1<span class="token punctuation">.</span>description <span class="token comment">// &quot;foo&quot;</span>
+
+<span class="token comment">//Symbol 值必须放在方括号之中</span>
+<span class="token keyword">let</span> mySymbol <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 第一种写法</span>
+<span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+a<span class="token punctuation">[</span>mySymbol<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'Hello!'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 第二种写法</span>
+<span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>mySymbol<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token string">'Hello!'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+a<span class="token punctuation">[</span>mySymbol<span class="token punctuation">]</span> <span class="token comment">// Hello</span>
+<span class="token comment">// 属性名实际上是一个字符串，而不是一个 Symbol 值</span>
+<span class="token keyword">const</span> mySymbol <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+a<span class="token punctuation">.</span>mySymbol <span class="token operator">=</span> <span class="token string">'Hello!'</span><span class="token punctuation">;</span>
+a<span class="token punctuation">[</span>mySymbol<span class="token punctuation">]</span> <span class="token comment">// undefined</span>
+a<span class="token punctuation">[</span><span class="token string">'mySymbol'</span><span class="token punctuation">]</span> <span class="token comment">// &quot;Hello!&quot;</span>
+
+<span class="token comment">//增强的对象写法</span>
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>s<span class="token punctuation">]</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/skill.html" class="prev">
+        技巧
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3d8304a4.js" defer></script><script src="/assets/js/2.5e921e88.js" defer></script><script src="/assets/js/15.adaf55db.js" defer></script>
+  </body>
+</html>

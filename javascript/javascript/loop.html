@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>return | Yong Book</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/watermelon.png">
+    <meta name="description" content="前端学习资料">
+    <link rel="preload" href="/assets/css/0.styles.16867b8b.css" as="style"><link rel="preload" href="/assets/js/app.3d8304a4.js" as="script"><link rel="preload" href="/assets/js/2.5e921e88.js" as="script"><link rel="preload" href="/assets/js/16.2d8f1028.js" as="script"><link rel="prefetch" href="/assets/js/10.9b7de2dc.js"><link rel="prefetch" href="/assets/js/11.de73375e.js"><link rel="prefetch" href="/assets/js/12.319ee31c.js"><link rel="prefetch" href="/assets/js/13.52ee1b30.js"><link rel="prefetch" href="/assets/js/14.95b4d87a.js"><link rel="prefetch" href="/assets/js/15.adaf55db.js"><link rel="prefetch" href="/assets/js/17.2a105d21.js"><link rel="prefetch" href="/assets/js/18.bf4886d6.js"><link rel="prefetch" href="/assets/js/3.5f2a698c.js"><link rel="prefetch" href="/assets/js/4.dd5127af.js"><link rel="prefetch" href="/assets/js/5.b064a07e.js"><link rel="prefetch" href="/assets/js/6.f16f746b.js"><link rel="prefetch" href="/assets/js/7.27ba3d64.js"><link rel="prefetch" href="/assets/js/8.aae86165.js"><link rel="prefetch" href="/assets/js/9.a97e21ff.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.16867b8b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Yong Book</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  Javascript
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link router-link-active">
+  Javascript
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  Vue
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/" aria-current="page" class="sidebar-link">JavaScript</a></li><li><a href="/javascript/loop.html" aria-current="page" class="active sidebar-link">循环</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/javascript/ES6.html" class="sidebar-link">ES6</a></li><li><a href="/javascript/skill.html" class="sidebar-link">技巧</a></li><li><a href="/javascript/Set&amp;Map.html" class="sidebar-link">Set&amp;Map</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="return"><a href="#return" class="header-anchor">#</a> return</h3> <p>return 关键字并不是专门用于跳出循环的，return 的功能是结束一个方法。 一旦在循环体内执行到一个 return 语句，return 语句将会结束该方法，循环自然也随之结束。与 continue 和 break 不同的是，return 直接结束整个方法，不管这个 return 处于多少层循环之内。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ReturnTest</span><span class="token punctuation">{</span>
+　　<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token parameter">String<span class="token punctuation">[</span><span class="token punctuation">]</span> args</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　<span class="token comment">// 一个简单的for循环</span>
+　　　　<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token parameter">int i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span> <span class="token punctuation">;</span> i<span class="token operator">++</span></span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　　　System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;i的值是&quot;</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+　　　　　　<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token parameter">i <span class="token operator">==</span> <span class="token number">1</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　　　　　<span class="token keyword">return</span><span class="token punctuation">;</span>
+　　　　　　<span class="token punctuation">}</span>
+　　　　　　System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;return后的输出语句&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+　　　　<span class="token punctuation">}</span>
+　　<span class="token punctuation">}</span>
+</code></pre></div><h3 id="continue"><a href="#continue" class="header-anchor">#</a> continue</h3> <blockquote><p>continue 的功能和 break 有点类似，区别是 continue 只是中止本次循环，接着开始下一次循环。而 break 则是完全中止循环。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ContinueTest</span><span class="token punctuation">{</span>
+　　<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token parameter">String<span class="token punctuation">[</span><span class="token punctuation">]</span> args</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 一个简单的for循环</span>
+　　　　<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token parameter">int i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span> <span class="token punctuation">;</span> i<span class="token operator">++</span></span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　　　　System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;i的值是&quot;</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+　　　　　　　<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token parameter">i <span class="token operator">==</span> <span class="token number">1</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　　　　　　<span class="token comment">// 忽略本次循环的剩下语句</span>
+　　　　　　　　　<span class="token keyword">continue</span><span class="token punctuation">;</span>
+　　　　　　　<span class="token punctuation">}</span>
+　　　　　　　System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;continue后的输出语句&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+　　　　<span class="token punctuation">}</span>
+　　<span class="token punctuation">}</span>
+</code></pre></div><h3 id="break"><a href="#break" class="header-anchor">#</a> break</h3> <p>break 用于完全结束一个循环，跳出循环体。不管是哪种循环，一旦在循环体中遇到 break，系统将完全结束循环，开始执行循环之后的代码。 break 不仅可以结束其所在的循环，还可结束其外层循环。此时需要在 break 后紧跟一个标签，这个标签用于标识一个外层循环。Java 中的标签就是一个紧跟着英文冒号（:）的标识符。且它必须放在循环语句之前才有作用。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BreakTest</span><span class="token punctuation">{</span>
+　　<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token parameter">String<span class="token punctuation">[</span><span class="token punctuation">]</span> args</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　<span class="token comment">// 外层循环，outer作为标识符</span>
+　　　　outer<span class="token operator">:</span>
+　　　　<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token parameter">int i <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span> <span class="token punctuation">;</span> i<span class="token operator">++</span></span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　　　<span class="token comment">// 内层循环</span>
+　　　　　　<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token parameter">int j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token number">3</span> <span class="token punctuation">;</span> j<span class="token operator">++</span></span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　　　　　System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;i的值为:&quot;</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">&quot; j的值为:&quot;</span> <span class="token operator">+</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+　　　　　　　　<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token parameter">j <span class="token operator">==</span> <span class="token number">1</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+　　　　　　　　　　<span class="token comment">// 跳出outer标签所标识的循环。</span>
+　　　　　　　　　　　<span class="token keyword">break</span> outer<span class="token punctuation">;</span>
+　　　　　　　　<span class="token punctuation">}</span>
+　　　　　　<span class="token punctuation">}</span>
+　　　　<span class="token punctuation">}</span>
+　　<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/" class="prev router-link-active">
+        JavaScript
+      </a></span> <span class="next"><a href="/javascript/ES6.html">
+        ES6
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3d8304a4.js" defer></script><script src="/assets/js/2.5e921e88.js" defer></script><script src="/assets/js/16.2d8f1028.js" defer></script>
+  </body>
+</html>
